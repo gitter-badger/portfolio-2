@@ -10,9 +10,14 @@ Home
 
 
 @section('content')
-<div class="row">
-	<div class="span10 offset1">
-		<h1>Welcome to my online portfolio</h1>
+<div class="abs-cen">
+	<div class="main-msg">
+		<h1>Imran Ismail</h1>
+		<h6 style="
+    padding: 20px;
+">Freelancer &amp; Web Developer</h6>
 	</div>
+    
+    <button class="learn">LEARN MORE</button>
 </div>
 @stop
