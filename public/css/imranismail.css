@@ -88,7 +88,7 @@ h6 {
 
 .container {
 	position: relative;
-	background-image: url('https://s3.amazonaws.com/ooomf-com-files/CFHakpPkTE2zdJUp9AlO_IMG_0906.JPG');
+	background-image: url('../img/splash.jpg');
     -webkit-filter: brightness(15%);
 	background-size: cover;
 	height: 100%;
@@ -135,6 +135,7 @@ button.learn {
 button.learn:hover {
     color: white;
     border-color: white;
+    -webkit-transition: all 1.5s;
 }
 
 
