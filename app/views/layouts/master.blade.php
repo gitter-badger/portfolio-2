@@ -34,8 +34,8 @@
         
         <div class="pop-slider slide-left-anim">
             <div class="pop-slider-content">
-                <h5>My Recent Work</h5>
-                <p>This div appears on toggle</p>
+                <h5>Coming Soon</h5>
+                <p></p>
             </div>
         </div>    
         
