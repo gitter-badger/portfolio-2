@@ -8,14 +8,19 @@
 	"buffers":
 	[
 		{
-			"contents": "@extends('layouts.master')\n\n@section('title')\n@parent\nHome\n@stop\n\n@section('styles')\n@stop\n\n\n@section('content')\n<button class=\"navigator pull-left\"><i class=\"fa fa-align-justify fa-inverse fa-3x\"></i></button>\n\n<div class=\"abs-cen\" id=\"abs-cen\">\n	<div class=\"main-msg\">\n		<h1>Imran Ismail</h1>\n		<h6 style=\"\n    \">Freelancer &amp; Web Developer</h6>\n	</div>\n    \n    <button class=\"learn\">LEARN MORE</button>\n</div>\n@stop\n",
 			"file": "app/views/hello.blade.php",
-			"file_size": 438,
-			"file_write_time": 130387327940000000,
 			"settings":
 			{
-				"buffer_size": 423,
+				"buffer_size": 409,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Entertainment/Program Files (x86)/SteamLibrary/SteamApps/common/dota 2 beta/dota/cfg/config.cfg",
+			"settings":
+			{
+				"buffer_size": 11175,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -30,7 +35,7 @@
 			"file": "public/css/imranismail.css",
 			"settings":
 			{
-				"buffer_size": 2558,
+				"buffer_size": 2555,
 				"line_ending": "Unix"
 			}
 		}
@@ -175,7 +180,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -184,15 +189,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 423,
+						"buffer_size": 409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								313,
-								313
+								409,
+								409
 							]
 						],
 						"settings":
@@ -203,11 +208,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/Volumes/Entertainment/Program Files (x86)/SteamLibrary/SteamApps/common/dota 2 beta/dota/cfg/config.cfg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4645.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -233,24 +266,24 @@
 						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "public/css/imranismail.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2558,
+						"buffer_size": 2555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2485,
-								2485
+								2119,
+								2119
 							]
 						],
 						"settings":
@@ -261,7 +294,7 @@
 						"translation.y": 1632.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

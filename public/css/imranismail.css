@@ -47,21 +47,23 @@ table {
 body {
 	font-family: 'Lato', Arial, sans-serif;
 	color:white;
+    font-weight: lighter;
 }
 
 h1, h2, h3 {
 	font-family: 'Montserrat', Arial, sans-serif;
 	text-transform: uppercase;
+    padding-top:20px;
 }
 
 h4, h5, h6 {
 	text-transform: capitalize;
-	padding: 20px;
-	font-weight: lighter;
+	padding-top: 10px;
 }
 
 p {
 	font-size: 16px;
+    padding-top: 10px;
 }
 
 h1 {
@@ -99,7 +101,7 @@ h6 {
 .abs-cen {
 	opacity: 0; 
 	width: 50%;
-	height: 50%;
+	height: 40%;
 	min-width: 200px;
 	max-width: 430px;
 	padding: 20px;
@@ -117,9 +119,14 @@ h6 {
 .abs-cen.active {
 	opacity:1;
 	-webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
 }
 
-button.learn {
+.btn {
+    margin:20px auto;
     border-width: 1px;
     border-style: solid;
     -webkit-border-radius: 2px;
@@ -135,17 +142,63 @@ button.learn {
     -webkit-transition: all 0.35s;
 }
 
-button.learn:hover {
+.btn:hover {
     color: white;
     border-color: white;
-    -webkit-transition: all 0.35s;
 }
 
-button.navigator {
-	border:none;
-    text-transform: uppercase;
-    margin: 50px;
+.anim-035 {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.slide-left-anim {
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+}
+
+input[type=checkbox]#toggle-1 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+label.toggle-slider {
+    margin: 40px;
     cursor: pointer;
-    display: inline-block;
-    background: none;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+input[type=checkbox]#toggle-1:checked ~ div.pop-slider {
+    left:0;
+}
+
+input[type=checkbox]#toggle-1:checked ~ label.toggle-slider {
+    left:320px;
+}
+
+
+.pop-slider{
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    left: -330px;
+    top: 0px;
+    height: 100%;
+    width: 330px;
+    z-index: 1;
+    overflow:hidden;
+}
+
+.pop-slider-content {
+    padding: 40px;
 }

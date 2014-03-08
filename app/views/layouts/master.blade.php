@@ -17,7 +17,7 @@
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
     
-    <style type="text/css">
+    <style type="text/css">                
     @section('styles')
     @show
     </style>
@@ -29,15 +29,22 @@
     document.getElementById('abs-cen').className += ' active';
     }
     </script>
-
+  
 	</head>
 
 
     <body onload="load()">
-        @section('sidebar')
-        @show
-
         <div class="container">
+            <input type="checkbox" id="toggle-1"></input>
+            <label class="toggle-slider slide-left-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
+            
+            <div class="pop-slider slide-left-anim">
+                <div class="pop-slider-content">
+                    <h6>Welcome</h6>
+                    <p>This div appears on toggle</p>
+                </div>
+            </div>    
+        
             @yield('content')
         </div>
     </body>
