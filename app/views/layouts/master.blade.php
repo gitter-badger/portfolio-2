@@ -15,7 +15,8 @@
     <link rel='stylesheet' id='google-webfonts-nc-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400&#038;ver=3.8.1' type='text/css' media='all' />
 	<link rel='stylesheet' id='google-webfonts-mw-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400&#038;ver=3.8.1' type='text/css' media='all' />
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
+    
     <style type="text/css">
     @section('styles')
     @show
