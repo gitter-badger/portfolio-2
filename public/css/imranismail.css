@@ -138,4 +138,11 @@ button.learn:hover {
     -webkit-transition: all 1.5s;
 }
 
-
+button.navigator {
+	border:none;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+}
