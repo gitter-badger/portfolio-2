@@ -16,24 +16,18 @@
 	<link rel='stylesheet' id='google-webfonts-mw-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400&#038;ver=3.8.1' type='text/css' media='all' />
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/animate.css')}}">
     
     <style type="text/css">                
     @section('styles')
     @show
     </style>
 
-
-    <script>
-    function load()
-    {
-    document.getElementById('abs-cen').className += ' active';
-    }
-    </script>
   
 	</head>
 
 
-    <body onload="load()">
+    <body>
         
         <input type="checkbox" id="toggle-1"></input>
         <label class="toggle-slider slide-left-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>

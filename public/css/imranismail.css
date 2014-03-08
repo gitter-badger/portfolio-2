@@ -118,15 +118,6 @@ h6 {
     overflow:hidden;
 }
 
-.abs-cen.active {
-	opacity:1;
-	-webkit-transition: opacity 1s ease-out;
-    -moz-transition: opacity 1s ease-out;
-    -o-transition: opacity 1s ease-out;
-    -ms-transition: opacity 1s ease-out;
-    transition: opacity 1s ease-out;
-}
-
 .btn {
     margin:20px auto;
     border-width: 1px;

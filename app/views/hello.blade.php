@@ -12,12 +12,12 @@ Home
 @stop
 
 @section('content')
-    <div class="abs-cen" id="abs-cen">
+    <div class="abs-cen fadeIn animated" id="abs-cen">
         <div class="main-msg">
-            <h1>Imran Ismail</h1>
-            <h6>Freelancer &amp; Web Developer</h6>
+            <h1 class="bounceIn animated">Imran Ismail</h1>
+            <h6 class="bounceIn animated">Freelancer &amp; Web Developer</h6>
             
-            <label class="btn anim-035" for="toggle-1">LEARN MORE</label>
+            <label class="btn" for="toggle-1">LEARN MORE</label>
         </div>
     </div> 
 @stop
