@@ -34,12 +34,12 @@
         
         <div class="pop-slider slide-left-anim">
             <div class="pop-slider-content">
-                <h6>Welcome</h6>
+                <h5>My Recent Work</h5>
                 <p>This div appears on toggle</p>
             </div>
         </div>    
         
-        <div class="container slide-left-anim">
+        <div class="wrapper slide-left-anim">
             @yield('content')
         </div>
     </body>
