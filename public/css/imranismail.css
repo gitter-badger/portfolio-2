@@ -130,12 +130,13 @@ button.learn {
     background: none;
     color: #DDDDDD;
     border-color: #DDDDDD;
+    -webkit-transition: all 0.35s;
 }
 
 button.learn:hover {
     color: white;
     border-color: white;
-    -webkit-transition: all 1.5s;
+    -webkit-transition: all 0.35s;
 }
 
 button.navigator {
