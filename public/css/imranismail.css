@@ -56,6 +56,8 @@ h1, h2, h3 {
 
 h4, h5, h6 {
 	text-transform: capitalize;
+	padding: 20px;
+	font-weight: lighter;
 }
 
 p {
@@ -89,18 +91,13 @@ h6 {
 .container {
 	position: relative;
 	background-image: url('../img/splash.jpg');
-    -webkit-filter: brightness(15%);
 	background-size: cover;
 	height: 100%;
 	width: 100%;
 }
 
-.container:hover {
-    -webkit-filter: brightness(100%);
-    -webkit-transition: all 3s;
-}
-
 .abs-cen {
+	opacity: 0; 
 	width: 50%;
 	height: 50%;
 	min-width: 200px;
@@ -114,15 +111,20 @@ h6 {
 	bottom: 0;
 	right: 0;
 	text-align: -webkit-center;
-	background-color: rgba(0, 0, 0, 0.3) ;
+	background-color: rgba(0, 0, 0, 0.3) ;- 
+}
+
+.abs-cen.active {
+	opacity:1;
+	-webkit-transition: opacity 1s ease-out;
 }
 
 button.learn {
     border-width: 1px;
     border-style: solid;
-    -webkit-border-radius: 21px;
-    -moz-border-radius: 21px;
-    border-radius: 21px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     text-transform: uppercase;
     padding: 10px 20px;
     cursor: pointer;
@@ -142,7 +144,7 @@ button.learn:hover {
 button.navigator {
 	border:none;
     text-transform: uppercase;
-    padding: 10px;
+    margin: 50px;
     cursor: pointer;
     display: inline-block;
     background: none;

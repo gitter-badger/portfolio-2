@@ -7,6 +7,33 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "@extends('layouts.master')\n\n@section('title')\n@parent\nHome\n@stop\n\n@section('styles')\n@stop\n\n\n@section('content')\n<button class=\"navigator pull-left\"><i class=\"fa fa-align-justify fa-inverse fa-3x\"></i></button>\n\n<div class=\"abs-cen\" id=\"abs-cen\">\n	<div class=\"main-msg\">\n		<h1>Imran Ismail</h1>\n		<h6 style=\"\n    \">Freelancer &amp; Web Developer</h6>\n	</div>\n    \n    <button class=\"learn\">LEARN MORE</button>\n</div>\n@stop\n",
+			"file": "app/views/hello.blade.php",
+			"file_size": 438,
+			"file_write_time": 130387327940000000,
+			"settings":
+			{
+				"buffer_size": 423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 1291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/imranismail.css",
+			"settings":
+			{
+				"buffer_size": 2558,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -80,6 +107,8 @@
 	},
 	"file_history":
 	[
+		"/Users/imran/Projects/portfolio/public/css/font-awesome.css",
+		"/Users/imran/Projects/portfolio/app/views/layouts/master.blade.php",
 		"/Users/imran/Projects/imranismail/app/views/hello.blade.php",
 		"/Users/imran/Projects/imranismail/app/views/layouts/master.blade.php",
 		"/Users/imran/Projects/imranismail/public/css/imranismail.css",
@@ -109,11 +138,11 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -146,8 +175,95 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/hello.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/css/imranismail.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2485,
+								2485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -227,7 +343,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

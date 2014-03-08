@@ -22,10 +22,18 @@
     @show
     </style>
 
+
+    <script>
+    function load()
+    {
+    document.getElementById('abs-cen').className += ' active';
+    }
+    </script>
+
 	</head>
 
 
-    <body>
+    <body onload="load()">
         @section('sidebar')
         @show
 
