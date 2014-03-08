@@ -91,7 +91,8 @@ h6 {
 }
 
 .container {
-	position: relative;
+	position: fixed;
+    left:0;
 	background-image: url('../img/splash.jpg');
 	background-size: cover;
 	height: 100%;
@@ -112,8 +113,9 @@ h6 {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	text-align: -webkit-center;
-	background-color: rgba(0, 0, 0, 0.3) ;- 
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3) ;
+    overflow:hidden;
 }
 
 .abs-cen.active {
@@ -175,13 +177,14 @@ label.toggle-slider {
     position:absolute;
     left:0;
     top:0;
+    z-index: 1;
 }
 
 input[type=checkbox]#toggle-1:checked ~ div.pop-slider {
     left:0;
 }
 
-input[type=checkbox]#toggle-1:checked ~ label.toggle-slider {
+input[type=checkbox]#toggle-1:checked ~ label.toggle-slider, input[type=checkbox]#toggle-1:checked ~ div.container {
     left:320px;
 }
 

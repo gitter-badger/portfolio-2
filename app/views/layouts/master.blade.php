@@ -34,17 +34,18 @@
 
 
     <body onload="load()">
-        <div class="container">
-            <input type="checkbox" id="toggle-1"></input>
-            <label class="toggle-slider slide-left-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
-            
-            <div class="pop-slider slide-left-anim">
-                <div class="pop-slider-content">
-                    <h6>Welcome</h6>
-                    <p>This div appears on toggle</p>
-                </div>
-            </div>    
         
+        <input type="checkbox" id="toggle-1"></input>
+        <label class="toggle-slider slide-left-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
+        
+        <div class="pop-slider slide-left-anim">
+            <div class="pop-slider-content">
+                <h6>Welcome</h6>
+                <p>This div appears on toggle</p>
+            </div>
+        </div>    
+        
+        <div class="container slide-left-anim">
             @yield('content')
         </div>
     </body>
