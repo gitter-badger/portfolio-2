@@ -12,18 +12,18 @@ Home
 @stop
 
 @section('content')
-<div class="container first">
+<div class="content first" id="home">
     <div class="abs-cen fadeIn animated" id="abs-cen">
         <div class="main-msg">
             <h1 class="bounceIn animated">Imran Ismail</h1>
-            <p class="bounceIn animated">Freelancer &amp; Web Developer</p>
+            <p class="bounceIn animated">Freelance Web Developer</p>
             
             <label class="btn" for="toggle-1">LEARN MORE</label>
         </div>
     </div> 
 </div>
 
-<div class="container second">
+<div class="content second" id="education">
     <div class="row" >
         <h5>Education</h5>
         <ul>
@@ -36,7 +36,7 @@ Home
     </div>
 </div>
 
-<div class="container third">
+<div class="content third" id="work">
     <div class="row" >
         <h5>Recent Work</h5>
         

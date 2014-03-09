@@ -1,4 +1,4 @@
-<html>
+<html lang="en"><head>
 	<head>
     <meta charset="utf-8">
     <title>
@@ -11,6 +11,11 @@
     <meta name="description" content="My Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- HTML5 Shim for IE -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
     <!-- CSS -->
     <link rel='stylesheet' id='google-webfonts-nc-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400&#038;ver=3.8.1' type='text/css' media='all' />
 	<link rel='stylesheet' id='google-webfonts-mw-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400&#038;ver=3.8.1' type='text/css' media='all' />
@@ -22,8 +27,7 @@
     @section('styles')
     @show
     </style>
-
-  
+        
 	</head>
 
 
@@ -34,13 +38,27 @@
         
         <div class="pop-slider slide-left-anim">
             <div class="pop-slider-content">
-                <h5>Coming Soon</h5>
+                <h5>About Me</h5>
+                <ul class="side-nav" id="sidebar">
+                    <li><a data-scroll href="#home">HOME</a></li>
+                    <li><a data-scroll href="#education">EDUCATION</a></li>
+                    <li><a data-scroll href="#work">WORK</a></li>
+                </ul>
+
+                
                 <p></p>
             </div>
         </div>    
-        
-        <div class="wrapper slide-left-anim">
-            @yield('content')
+        <div id="background" class="slide-left-anim">
         </div>
+        <div id="wrapper" class="slide-left-anim">       
+                @yield('content')
+              
+        </div>
+    
+        <script src='{{ asset('js/smooth-scroll.js')}}'></script>
+	<script>
+		smoothScroll.init();
+	</script>
     </body>
 </html>
