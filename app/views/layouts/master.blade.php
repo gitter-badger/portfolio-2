@@ -27,7 +27,7 @@
     @section('styles')
     @show
     </style>
-        
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	</head>
 
 
@@ -40,9 +40,9 @@
             <div class="pop-slider-content">
                 <h5>About Me</h5>
                 <ul class="side-nav" id="sidebar">
-                    <li><a data-scroll href="#home">HOME</a></li>
-                    <li><a data-scroll href="#education">EDUCATION</a></li>
-                    <li><a data-scroll href="#work">WORK</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#work">WORK</a></li>
                 </ul>
 
                 
@@ -51,14 +51,20 @@
         </div>    
         <div id="background" class="slide-left-anim">
         </div>
-        <div id="wrapper" class="slide-left-anim">       
-                @yield('content')
-              
+        <div id="wrapper" class="slide-left-anim">
+                @yield('content')       
         </div>
     
-        <script src='{{ asset('js/smooth-scroll.js')}}'></script>
-	<script>
-		smoothScroll.init();
-	</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <script>
+    $(document).ready(function() {
+
+      $('#sidebar a').smoothScroll({
+            scrollElement: $('div#wrapper')
+      });
+
+    });
+    </script>
     </body>
 </html>
