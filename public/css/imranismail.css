@@ -564,7 +564,7 @@ div.container {
 }
 
 div.row {
-    padding: 40px 175px;
+    padding: 40px 300px;
 }
 
 div.abs-cen {
@@ -617,11 +617,11 @@ div.abs-cen {
 }
 
 .slide-left-anim {
-    -webkit-transition: left 0.5s ease-in-out;
-    -moz-transition: left 0.5s ease-in-out;
-    -o-transition: left 0.5s ease-in-out;
-    -ms-transition: left 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out;
+    -webkit-transition: left 0.2s ease-in-out;
+    -moz-transition: left 0.2s ease-in-out;
+    -o-transition: left 0.2s ease-in-out;
+    -ms-transition: left 0.2s ease-in-out;
+    transition: left 0.2s ease-in-out;
 }
 
 input[type=checkbox]#toggle-1 {
