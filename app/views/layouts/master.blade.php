@@ -4,7 +4,7 @@
     <title>
       @section('title')
       @show
-       | Imran Ismail
+      Imran Ismail
     </title>
     <meta name="keywords" content="imran ismail, portfolio, resume, cv, jobs, web developer, development, dev" />
     <meta name="author" content="Imran Ismail" />

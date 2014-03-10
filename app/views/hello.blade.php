@@ -2,7 +2,6 @@
 
 @section('title')
 @parent
-Home
 @stop
 
 @section('styles')
