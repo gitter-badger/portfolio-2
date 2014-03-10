@@ -22,6 +22,8 @@
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{ asset('css/animate.css')}}">
+        
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     
     <style type="text/css">                
     @section('styles')

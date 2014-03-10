@@ -568,17 +568,16 @@ div#background {
     left:0;
 }
 
-div.content {
+section {
     height: 98%;
     position: relative;
 }
 
-div.row {
+section > article {
     padding: 40px 300px;
 }
 
-div.abs-cen {
-	opacity: 0; 
+div#abs-cen { 
 	width: 50%;
 	height: 40%;
 	min-width: 200px;
@@ -722,4 +721,18 @@ ul.side-nav > li:hover  {
 
 ul.side-nav > li > a:hover {
     color: white;
+}
+
+menu, ol, ul {
+    padding: 0 0 0 30px;
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid white;
+    padding: 20px 10px;
+}
+
+li > p {
+    margin:0;
 }
