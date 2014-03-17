@@ -36,24 +36,25 @@
     <body>
         
         <input type="checkbox" id="toggle-1"></input>
-        <label class="toggle-slider slide-left-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
+        <label class="toggle-slider slide-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
         
-        <div class="pop-slider slide-left-anim">
+        <div class="pop-slider slide-anim">
             <div class="pop-slider-content">
                 <h5>About Me</h5>
                 <ul class="side-nav" id="sidebar">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#community">COMMUNITY</a></li>
+                    <li><a href="#work">RECENT WORK</a></li>
                 </ul>
 
                 
                 <p></p>
             </div>
         </div>    
-        <div id="background" class="slide-left-anim">
+        <div id="background" class="slide-anim">
         </div>
-        <div id="wrapper" class="slide-left-anim">
+        <div id="wrapper" class="slide-anim">
                 @yield('content')       
         </div>
     
