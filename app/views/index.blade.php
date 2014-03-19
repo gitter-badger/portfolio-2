@@ -15,7 +15,7 @@
     <div class="fadeIn animated" id="abs-cen">
         <div class="main-msg">
             <h1 class="bounceIn animated">Imran Ismail</h1>
-            <p class="bounceIn animated">Freelance Web Developer</p>
+            <span class="bounceIn animated">Freelance Web Developer</span>
             
             <label class="btn" for="toggle-1">LEARN MORE</label>
         </div>
