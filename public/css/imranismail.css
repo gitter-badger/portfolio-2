@@ -576,12 +576,13 @@ table {
     }
     
     body {
-        overflow-x:hidden;
+        overflow-x:hidden;  
     }
     
-    div#wrapper {
+    div#container {
         position: relative;
-        left:0;
+        background-image: url('../img/splash2.jpg');
+        background-size: cover;
         height: 100%;
         width: 100%;
         overflow:auto;
@@ -600,15 +601,6 @@ table {
         bottom: 0;
         right: 0;
         text-align: center;
-    }
-
-    div#background {
-        background-image: url('../img/splash2.jpg');
-        background-size: cover;
-        position:fixed;
-        height: 100%;
-        width: 100%;
-        left:0;
     }
 
     section > article {
@@ -657,7 +649,10 @@ table {
         background: none;
         color: #DDDDDD;
         border-color: #DDDDDD;
-        -webkit-transition: all 0.35s;
+        -webkit-transition: color 0.35s, border 0.35s;
+        -o-transition: color 0.35s, border 0.35s;
+        -moz-transition: color 0.35s, border 0.35s;
+        transition: color 0.35s, border 0.35s;
     }
     
     .btn:hover {
@@ -665,34 +660,24 @@ table {
         border-color: white;
     }
     
-    .animate {
-      -webkit-transform: translateZ(0);
-      -moz-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      -o-transform: translateZ(0);
-      transform: translateZ(0);
-    
-      -moz-transition: all 1s;
-      -webkit-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s ;
-    }
-    
     
     #toggle-slider {
+        display: none;
+    }
+
+    #menu-button > i {
+        padding: 5px;
+        background: #333;
+    }
+
+    #menu-button {
         background: none;
         border: none;
         padding: 0;
         margin: 45px;
         cursor: pointer;
-        position:fixed;
-        left: 0;
-        z-index: 2;
-    }
-
-    #toggle-slider > i {
-        padding: 5px;
-        background: #333;
+        position: fixed;
+        z-index: 1;
     }
        
     
@@ -701,12 +686,9 @@ table {
         color: #fff;
         text-align: left;
         position: fixed;
-        left: -330px;
-        top: 0px;
         height: 100%;
         width: 330px;
-        overflow:hidden;
-        z-index:1;
+        overflow: hidden;
     }
     
     .pop-slider-content {
@@ -764,6 +746,9 @@ table {
     
     ul.side-nav > li:hover  {
         background: #222;
+        -webkit-transition: background 0.15s ease-out;
+        -o-transition: background 0.15s ease-out;
+        -moz-transition: background 0.15s ease-out;
         transition: background 0.15s ease-out;
     }
     
@@ -775,17 +760,31 @@ table {
     LAYOUT MANIPULATION
     ***************************************/
 
-    #toggle-slider.toggled {
-        left: 320px;
+    .toggled {
+        -webkit-transform: translate3d(330px, 0, 0);
+        transform: translate3d(330px, 0, 0);
+        -moz-transform: translate3d(330px, 0, 0);
+        -o-transform: translate3d(330px, 0, 0);
+        -ms-transform: translate3d(330px, 0, 0);
     }
 
-    #pop-slider.slideout {
-        left:0;
+
+    .animate {
+      -moz-transition: -moz-transform .25s ease-in-out;
+      -webkit-transition: -webkit-transform .25s ease-in-out;
+      -o-transition: -o-transform .25s ease-in-out;
+      transition: transform .25s ease-in-out;
     }
+
+    /*#toggle-slider:checked ~ #container, #toggle-slider:checked ~ #menu-button {
+        transform: translate3D(330px,0,0);
+        -moz-transform: translate3D(330px,0,0);
+        -webkit-transform: translate3D(330px,0,0);
+    }*/
 
 }
 
-@media screen and (max-height: 768px) {
+/*@media screen and (max-height: 768px) {
     div.main-msg {
         padding: 0;
     }
@@ -807,9 +806,9 @@ table {
     }
     
     html {
-        font-size: 100%; /* 1 */
-        -ms-text-size-adjust: 100%; /* 2 */
-        -webkit-text-size-adjust: 100%; /* 2 */
+        font-size: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
     }
     
     li {
@@ -817,9 +816,6 @@ table {
         padding: 10px 10px;
     }
 
-    /**************************************
-    LAYOUT MANIPULATION
-    ***************************************/
 
     #toggle-slider.toggled {
         left: 85%;
@@ -862,5 +858,5 @@ table {
     ul {
         padding:0;
     }
-
+*/
 }

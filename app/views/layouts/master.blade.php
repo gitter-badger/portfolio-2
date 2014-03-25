@@ -1,6 +1,7 @@
 <html lang="en"><head>
 	<head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>
       @section('title')
       @show
@@ -17,11 +18,9 @@
 	<![endif]-->
 
     <!-- CSS -->
-    <link rel='stylesheet' id='google-webfonts-nc-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400&#038;ver=3.8.1' type='text/css' media='all' />
-	<link rel='stylesheet' id='google-webfonts-mw-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400&#038;ver=3.8.1' type='text/css' media='all' />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
-        
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">    
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     
     <style type="text/css">                
@@ -32,12 +31,14 @@
 
 
     <body>
+    <input type="checkbox" id="toggle-slider">
+    <label id="menu-button" for="toggle-slider" class="animate"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
+    <!--
+    <button type="button" href="#" id="toggle-slider" class="animate"><i class="fa fa-align-justify fa-inverse fa-2x"></i>
+    </button>
+    -->
 
-    <div id="background" class="animate">
-    </div>
-    <button type="button" href="#" id="toggle-slider" class="animate"><i class="fa fa-align-justify fa-inverse fa-2x"></i></button>
-
-    <div id="pop-slider" class="animate">
+    <div id="pop-slider">
         <div class="pop-slider-content">
             <h5>About Me</h5>
             <ul class="side-nav" id="sidebar">
@@ -50,13 +51,13 @@
             
             <p></p>
         </div>
-    </div>    
+    </div>
 
-        <div id="wrapper" class="animate">      
-                @yield('content')       
-        </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-/*    <script src="js/jquery.smooth-scroll.js"></script>*/
+    <div id="container" class="animate">
+            @yield('content')
+    </div>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.smooth-scroll.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
     </body>
 </html>
