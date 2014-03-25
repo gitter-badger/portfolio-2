@@ -21,7 +21,6 @@
 	<link rel='stylesheet' id='google-webfonts-mw-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400&#038;ver=3.8.1' type='text/css' media='all' />
     <link href="{{ asset('css/imranismail.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/animate.css')}}">
         
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     
@@ -29,45 +28,35 @@
     @section('styles')
     @show
     </style>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	</head>
 
 
     <body>
-        
-        <input type="checkbox" id="toggle-1"></input>
-        <label class="toggle-slider slide-anim" for="toggle-1"><i class="fa fa-align-justify fa-inverse fa-2x"></i></label>
-        
-        <div class="pop-slider slide-anim">
-            <div class="pop-slider-content">
-                <h5>About Me</h5>
-                <ul class="side-nav" id="sidebar">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#community">COMMUNITY</a></li>
-                    <li><a href="#work">RECENT WORK</a></li>
-                </ul>
 
-                
-                <p></p>
-            </div>
-        </div>    
-        <div id="background" class="slide-anim">
+    <div id="background" class="animate">
+    </div>
+    <button type="button" href="#" id="toggle-slider" class="animate"><i class="fa fa-align-justify fa-inverse fa-2x"></i></button>
+
+    <div id="pop-slider" class="animate">
+        <div class="pop-slider-content">
+            <h5>About Me</h5>
+            <ul class="side-nav" id="sidebar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#community">COMMUNITY</a></li>
+                <li><a href="#work">RECENT WORK</a></li>
+            </ul>
+
+            
+            <p></p>
         </div>
-        <div id="wrapper" class="slide-anim">
+    </div>    
+
+        <div id="wrapper" class="animate">      
                 @yield('content')       
         </div>
-    
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.smooth-scroll.js"></script>
-    <script>
-    $(document).ready(function() {
-
-      $('#sidebar a').smoothScroll({
-            scrollElement: $('div#wrapper')
-      });
-
-    });
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+/*    <script src="js/jquery.smooth-scroll.js"></script>*/
+    <script src="{{ asset('js/script.js') }}"></script>
     </body>
 </html>

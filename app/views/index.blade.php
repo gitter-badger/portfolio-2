@@ -12,12 +12,12 @@
 
 @section('content')
 <section id="home">
-    <div class="fadeIn animated" id="abs-cen">
+    <div id="abs-cen">
         <div class="main-msg">
-            <h1 class="bounceIn animated">Imran Ismail</h1>
-            <span class="bounceIn animated">Freelance Web Developer</span>
+            <h1>Imran Ismail</h1>
+            <span>Freelance Web Developer</span>
             
-            <label class="btn" for="toggle-1">LEARN MORE</label>
+            <label class="btn" for="toggle-slider">LEARN MORE</label>
         </div>
     </div> 
 </section>

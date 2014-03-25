@@ -665,29 +665,24 @@ table {
         border-color: white;
     }
     
-    .anim-035 {
-        -webkit-transition: all 0.35s;
-        -moz-transition: all 0.35s;
-        -o-transition: all 0.35s;
-        -ms-transition: all 0.35s;
-        transition: all 0.35s;
+    .animate {
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    
+      -moz-transition: all 1s;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s ;
     }
     
-    .slide-anim {
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
     
-    input[type=checkbox]#toggle-1 {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-    
-    label.toggle-slider {
+    #toggle-slider {
+        background: none;
+        border: none;
+        padding: 0;
         margin: 45px;
         cursor: pointer;
         position:fixed;
@@ -695,21 +690,13 @@ table {
         z-index: 2;
     }
 
-    label.toggle-slider > i {
+    #toggle-slider > i {
         padding: 5px;
         background: #333;
     }
+       
     
-    input[type=checkbox]#toggle-1:checked ~ div.pop-slider {
-        left:0;
-    }
-    
-    input[type=checkbox]#toggle-1:checked ~ label.toggle-slider, input[type=checkbox]#toggle-1:checked ~ div#wrapper, input[type=checkbox]#toggle-1:checked ~ div#background {
-        left:320px;
-    }
-    
-    
-    .pop-slider{
+    #pop-slider{
         background-color: #222;
         color: #fff;
         text-align: left;
@@ -718,8 +705,8 @@ table {
         top: 0px;
         height: 100%;
         width: 330px;
-        z-index: 1;
         overflow:hidden;
+        z-index:1;
     }
     
     .pop-slider-content {
@@ -784,6 +771,18 @@ table {
         color: white;
     }
 
+    /**************************************
+    LAYOUT MANIPULATION
+    ***************************************/
+
+    #toggle-slider.toggled {
+        left: 320px;
+    }
+
+    #pop-slider.slideout {
+        left:0;
+    }
+
 }
 
 @media screen and (max-height: 768px) {
@@ -817,14 +816,22 @@ table {
         border-bottom: 1px solid white;
         padding: 10px 10px;
     }
-    
-    label.toggle-slider {
-        margin: 20px;
+
+    /**************************************
+    LAYOUT MANIPULATION
+    ***************************************/
+
+    #toggle-slider.toggled {
+        left: 85%;
     }
 
-    input[type=checkbox]#toggle-1:checked ~ label.toggle-slider     {
-        left: 100vw;
-        margin-left: -54;
+    #pop-slider.slideout {
+        left:0;
+    }
+
+    
+    #toggle-slider {
+        margin: 20px;
     }
 
     section#home {
@@ -842,9 +849,9 @@ table {
         max-width: 300px;
     }
 
-    .pop-slider {
-        left: -100vw;
-        width: 100vw;
+    #pop-slider {
+        left: -100%;
+        width: 100%;
     }
 
     section > article {
