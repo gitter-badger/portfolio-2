@@ -1,36 +1,64 @@
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
     $(document).ready(function() {
-
-      $('#sidebar a').smoothScroll({
-            scrollElement: $('div#container')
-      });
-
+        if( !isMobile.any() )
+        {
+            $('#sidebar a').smoothScroll({
+                scrollElement: $('div#container')
+            });
+        }      
     });
 
-    function checkToggle() {
-        if($('#menu-button').hasClass('toggled'))
-            {
-                $('#container').removeClass('toggled');
-                $('#menu-button').removeClass('toggled');
-            }
-        else
-            {
-                $('#container').addClass('toggled');
-                $('#menu-button').addClass('toggled');
-            }
-    }
+    $(function() {    
+        $('#sidebar a').click(function(){
+ 
 
-    $(function() {        
-        $('#toggle-slider').click(function(event){
+            if ($("#toggle-slider").get(0).checked) 
+                {
+                    $("#toggle-slider").attr('checked', false);
+                    $('#container').removeClass('toggled');
+                    $('#menu-button').removeClass('toggled');
+                }
+            else
+                {
+                    $("#toggle-slider").attr('checked', true);
+                    $('#container').addClass('toggled');
+                    $('#menu-button').addClass('toggled');
+                }
+        });
+
+        $('#toggle-slider').change(function(event){
             event.preventDefault();
             event.stopPropagation();
             
-            checkToggle();
-        });
-
-        $('#sidebar a').click(function(event){
-            event.preventDefault();
-            event.stopPropagation();
-    
-            checkToggle();
+            if (this.checked) 
+                {
+                    $('#container').addClass('toggled');
+                    $('#menu-button').addClass('toggled');
+                }
+            else
+                {
+                    $('#container').removeClass('toggled');
+                    $('#menu-button').removeClass('toggled');
+                }    
         });
     });
